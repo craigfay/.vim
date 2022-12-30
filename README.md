@@ -6,7 +6,9 @@ Since version 8, Vim will auto-load plugins in directories matching `~/.vim/pack
 
 # How To Add Plugins
 
-`git submodule add <git-address> ./pack/plugins/start/<plugin-name>`
+```
+git submodule add <git-address> ./pack/plugins/start/<plugin-name>`
+```
 
 
 # How To Update Plugins
@@ -14,7 +16,6 @@ Since version 8, Vim will auto-load plugins in directories matching `~/.vim/pack
 ```
 git submodule update --remote --merge
 git commit
-
 ```
 
 # How To Remove Plugins
