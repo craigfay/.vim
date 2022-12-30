@@ -1,4 +1,5 @@
 
+"Open quickfix windows in a full-width split
 botright cwindow
 
 "Enable Syntax Highlighting
@@ -7,36 +8,28 @@ syntax enable
 "Color Scheme
 colo dogrun
 
-"Set file explorer split size, useful for :Lex
-"let g:netrw_winsize=30"
-
-"Enable Line Numbers"
+"Enable Line Numbers
 set number
 
-" Disable generation of .swp files"
+" Disable generation of .swp files
 set noswapfile
 
-"Key Mappings
-"Change the default leader key to ,"
+"Change the default leader key
 let mapleader = ','
 
-"Easily edit the vimrc file"
+"Easily edit the vimrc file
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
-
-"Automatically source the vimrc file on save. The group keeps vim from sourcing recursively."
+"Automatically source the vimrc file on save. The group keeps vim from sourcing recursively.
 augroup autosourcing
 	autocmd!
 	autocmd BufWritePost ~/.vim/vimrc source %
 augroup END
 
 
-"Search
-"Use incremental search"
+"Use incremental search
 set incsearch
 
-
-"Split Management
 "Always have splits be below and right
 set splitbelow
 set splitright
@@ -67,11 +60,15 @@ set autoindent
 set list
 set listchars=tab:›\ ,eol:¬,trail:⋅
 
-" Automatically update file diffs
+"Automatically update file diffs
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
-" Automatically change directories when opening files
-" set autochdir
+"Automatically change directories when opening files
+set autochdir
+
+"svelte-vim pluggin settings
+let g:svelte_preprocessors = ['typescript']
+
 
 " Vim Tips
 " - Use <g><q><q> to format long markdown lines nicely.
