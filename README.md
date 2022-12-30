@@ -1,7 +1,7 @@
 
 # Managing Plugins
 
-Since version 8, Vim will auto-load plugins in directories matching `~/.vim/pack/*/start/`. This makes it convenient to manage plugins using git submodules instead of a package manager like Plug or [Pathogen](https://github.com/tpope/vim-pathogen).
+Since version 8, Vim will natively auto-load plugins in directories matching `~/.vim/pack/*/start/`. This makes it convenient to manage plugins using git submodules instead of a package manager like [Plug](https://github.com/junegunn/vim-plug) or [Pathogen](https://github.com/tpope/vim-pathogen).
 
 
 # How To Add Plugins
