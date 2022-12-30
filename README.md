@@ -27,3 +27,9 @@ rm -Rf .git/modules/pack/plugins/start/<plugin-name>
 git commit
 ```
 
+
+# Where Can I Put My RC File?
+
+```
+:help $MYVIMRC
+```
