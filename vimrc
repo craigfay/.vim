@@ -66,6 +66,9 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 "Automatically change directories when opening files
 set autochdir
 
+"Show matches for file searches above the command line
+set wildmenu
+
 "svelte-vim pluggin settings
 let g:svelte_preprocessors = ['typescript']
 
