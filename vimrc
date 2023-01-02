@@ -2,6 +2,9 @@
 "Open quickfix windows in a full-width split
 botright cwindow
 
+"Use a newer regex engine to speed up syntax highlighting
+set re=2
+
 "Enable Syntax Highlighting
 syntax enable
 
@@ -47,6 +50,9 @@ set shiftwidth=4
 "file specific tabsizes
 autocmd Filetype ts setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd Filetype js setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype svelte setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype json setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype html setlocal shiftwidth=4 tabstop=4 softtabstop=2
 autocmd Filetype rs setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd Filetype py setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
@@ -69,9 +75,8 @@ set autochdir
 "Show matches for file searches above the command line
 set wildmenu
 
-"svelte-vim pluggin settings
+"Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']
-
 
 " Vim Tips
 " - Use <g><q><q> to format long markdown lines nicely.
