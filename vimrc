@@ -70,10 +70,29 @@ set listchars=tab:›\ ,eol:¬,trail:⋅
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 "Automatically change directories when opening files
-set autochdir
+"set autochdir
 
 "Show matches for file searches above the command line
 set wildmenu
+
+"Highlight the current line
+set cursorline
+
+"Highlight all search matches
+set hlsearch
+
+"Stop vim from beeping at mistakes
+set visualbell
+
+"Ignore patterns during wildcard searches
+set wildignore+=*/.git/*,*/node_modules/*,*/.hg/*,*/.svn/*.,*/.DS_Store
+
+"Keep the current dir and browsing dir synced
+"This helps avoid errors when moving marked files
+let g:netrw_keepdir = 0
+
+"Highlight marked files in netrw
+hi! link netrwMarkFile Search
 
 "Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']

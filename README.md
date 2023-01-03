@@ -33,3 +33,7 @@ git commit
 ```
 :help $MYVIMRC
 ```
+
+# Resources
+
+[Integralist](https://www.integralist.co.uk/posts/vim/)
