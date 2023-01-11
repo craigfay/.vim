@@ -28,7 +28,18 @@ Use `dt<char>` to delete everything until the next instance of `<char>`.
 Use `ci}` to replace the contents of inside the current curly bracket pair.
 Use `yi'` to yank everything inside the enclosing single quotes.
 Use `ya"` to yank the enclosing double quotes and everything inside.
+Use `yap` to yank the entire paragraph.
+Use `va{` while select everything inside and including the surrounding curly brace.
+Use `%` to jump to the corresponding bracket that you're hovering over.
+Use `V` to select the current line in visual mode.
 Prefix any yank with `“*` to copy to the system clipboard.
+
+Use `<ctrl d>` and `<ctrl u>` to jump up and down by a half-page.
+
+When in visual mode, press `V` to change to selects entire lines.
+Press `o` in visual mode to toggle your cursor between the start and end of your selection.
+
+
 
 
 # Command Mode
@@ -49,6 +60,10 @@ this sentence is normalized
 # Formatting
 
 Use `gg=G` to re-indent the entire file.
+Use `=ap` to re-indent the enclosing paragraph.
+When a file is using tabs instead of spaces, `:set expandtab` and `:retab`
+Use `>l` and `<h` to move endentation to the right and left.
+Use `>5j` to indent the 5 lines below.
 
 # Line Wrapping
 
@@ -111,6 +126,10 @@ Use :vimgrep 'pattern' filepath to search the codebase, and :cn, :cp, :cnf,
 :cnp to jump between matches. Use :cr to return to the first match.
 
 Use `:cdo s/before/after/gc | update` to interactively find and replace matches from `:vimgrep`
+
+Use `gd` or `gD` to go to a local declaration of a variable. `gD` always starts from the top of the file.
+
+Use `:noh` to turn off highlighting until the next search.
 
 # Quickfix Window
 

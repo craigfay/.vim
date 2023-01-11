@@ -55,6 +55,7 @@ autocmd Filetype json setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd Filetype html setlocal shiftwidth=4 tabstop=4 softtabstop=2
 autocmd Filetype rs setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd Filetype py setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd Filetype kt setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 "On pressing tab, insert spaces
 set expandtab
@@ -87,15 +88,19 @@ set visualbell
 "Ignore patterns during wildcard searches
 set wildignore+=*/.git/*,*/node_modules/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
-"Keep the current dir and browsing dir synced
-"This helps avoid errors when moving marked files
-let g:netrw_keepdir = 0
+"Use relative line numbers
+set relativenumber
 
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
 
+"Keep the current dir and browsing dir synced
+"This helps avoid errors when moving marked files
+let g:netrw_keepdir = 0
+
 "Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']
+
 
 " Vim Tips
 " - Use <g><q><q> to format long markdown lines nicely.
