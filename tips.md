@@ -16,6 +16,16 @@ Use `10kj` to delete the next 10 lines upward
 
 Use `u` and `<ctrl> r` to undo / redo.
 
+# Macros
+
+Press `q` in normal mode to start recording a macro, and then another key, let's say `w` that the macro will be assigned to.
+
+Input your macro, and press `q` again to finish recording.
+
+Type `@w` in normal mode to replay the macro.
+
+Type `3@w` to replay the macro 3 times
+
 # Motions
 
 Get fast with `w`, `f`, and `t`.
@@ -114,6 +124,7 @@ Use `:pwd` to show the current directory
 # Visual Mode
 
 Use `gv` to re-select the last thing selected in visual mode.
+Use `<ctrl v>` to select columns? I don't know the terminology.
 
 
 # Find and Replace
@@ -130,6 +141,8 @@ Use `:cdo s/before/after/gc | update` to interactively find and replace matches 
 Use `gd` or `gD` to go to a local declaration of a variable. `gD` always starts from the top of the file.
 
 Use `:noh` to turn off highlighting until the next search.
+Use `:set hlsearch!` to toggle search highlighting on and off.
+
 
 # Quickfix Window
 
@@ -186,8 +199,12 @@ Use `:set spell` to enable spell checking.
 Use `:set spelllang <iso_code>` to set the spell check language.
 
 
-
 # Fold Management
 
 Use `zo` and `zc` to open and close folds.
 Use `zr` and `zm` to open and close all folds.
+
+
+# Misc
+
+Use `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g` to get a staircase effect.
