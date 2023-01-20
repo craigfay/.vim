@@ -11,6 +11,10 @@ Use `viW` to visually select the entirety of the current non-whitespace chunk.
 Use `10dj` to delete the next 10 lines downward (good with relative number)
 Use `10kj` to delete the next 10 lines upward
 
+# Insert Mode
+`<ctrl w>` back one character
+`<ctrl u>` back to insert position
+
 
 # Undo / Redo
 
