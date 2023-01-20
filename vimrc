@@ -25,8 +25,8 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 "Automatically source the vimrc file on save. The group keeps vim from sourcing recursively.
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost ~/.vim/vimrc source %
+autocmd!
+autocmd BufWritePost ~/.vim/vimrc source %
 augroup END
 
 
@@ -96,14 +96,12 @@ set relativenumber
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
 
-<<<<<<< HEAD
 "Press `?` in netrw to show the quickmap
 autocmd FileType netrw nnoremap ? :help netrw-quickmap<CR>
-=======
+
 "Keep the current dir and browsing dir synced
 "This helps avoid errors when moving marked files
 let g:netrw_keepdir = 0
->>>>>>> 491652888833d25b646464ebd9bdfb659fc149a4
 
 "Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']
