@@ -97,7 +97,7 @@ set relativenumber
 hi! link netrwMarkFile Search
 
 "Press `?` in netrw to show the quickmap
-autocmd FileType netrw nnoremap ? :help netrw-quickmap<CR>
+autocmd FileType netrw nnoremap ? :tab help netrw-quickmap<CR>
 
 "Keep the current dir and browsing dir synced
 "This helps avoid errors when moving marked files
