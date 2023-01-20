@@ -31,6 +31,15 @@ Use `qb` to list bookmarked files.
 Use `qf` to list information for the file under the cursor.
 Use `s` to cycle sorting style by name, time or file size
 
+# Macros
+
+Press `q` in normal mode to start recording a macro, and then another key, let's say `w` that the macro will be assigned to.
+
+Input your macro, and press `q` again to finish recording.
+
+Type `@w` in normal mode to replay the macro.
+
+Type `3@w` to replay the macro 3 times
 
 # Motions
 
@@ -44,7 +53,18 @@ Use `dt<char>` to delete everything until the next instance of `<char>`.
 Use `ci}` to replace the contents of inside the current curly bracket pair.
 Use `yi'` to yank everything inside the enclosing single quotes.
 Use `ya"` to yank the enclosing double quotes and everything inside.
+Use `yap` to yank the entire paragraph.
+Use `va{` while select everything inside and including the surrounding curly brace.
+Use `%` to jump to the corresponding bracket that you're hovering over.
+Use `V` to select the current line in visual mode.
 Prefix any yank with `“*` to copy to the system clipboard.
+
+Use `<ctrl d>` and `<ctrl u>` to jump up and down by a half-page.
+
+When in visual mode, press `V` to change to selects entire lines.
+Press `o` in visual mode to toggle your cursor between the start and end of your selection.
+
+
 
 
 # Command Mode
@@ -65,6 +85,10 @@ this sentence is normalized
 # Formatting
 
 Use `gg=G` to re-indent the entire file.
+Use `=ap` to re-indent the enclosing paragraph.
+When a file is using tabs instead of spaces, `:set expandtab` and `:retab`
+Use `>l` and `<h` to move endentation to the right and left.
+Use `>5j` to indent the 5 lines below.
 
 # Line Wrapping
 
@@ -115,6 +139,7 @@ Use `:pwd` to show the current directory
 # Visual Mode
 
 Use `gv` to re-select the last thing selected in visual mode.
+Use `<ctrl v>` to select columns? I don't know the terminology.
 
 
 # Find and Replace
@@ -127,6 +152,12 @@ Use :vimgrep 'pattern' filepath to search the codebase, and :cn, :cp, :cnf,
 :cnp to jump between matches. Use :cr to return to the first match.
 
 Use `:cdo s/before/after/gc | update` to interactively find and replace matches from `:vimgrep`
+
+Use `gd` or `gD` to go to a local declaration of a variable. `gD` always starts from the top of the file.
+
+Use `:noh` to turn off highlighting until the next search.
+Use `:set hlsearch!` to toggle search highlighting on and off.
+
 
 # Quickfix Window
 
@@ -183,8 +214,12 @@ Use `:set spell` to enable spell checking.
 Use `:set spelllang <iso_code>` to set the spell check language.
 
 
-
 # Fold Management
 
 Use `zo` and `zc` to open and close folds.
 Use `zr` and `zm` to open and close all folds.
+
+
+# Misc
+
+Use `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g` to get a staircase effect.

@@ -47,6 +47,9 @@ set tabstop=4
 "when indenting with '>', use 4 spaces width
 set shiftwidth=4
 
+"On pressing tab, insert spaces
+set expandtab
+
 "file specific tabsizes
 autocmd Filetype ts setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd Filetype js setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -55,9 +58,9 @@ autocmd Filetype json setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd Filetype html setlocal shiftwidth=4 tabstop=4 softtabstop=2
 autocmd Filetype rs setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd Filetype py setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd Filetype kt setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
-"On pressing tab, insert spaces
-set expandtab
+
 
 "Auto indent
 set autoindent
@@ -87,15 +90,20 @@ set visualbell
 "Ignore patterns during wildcard searches
 set wildignore+=*/.git/*,*/node_modules/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
-"Keep the current dir and browsing dir synced
-"This helps avoid errors when moving marked files
-let g:netrw_keepdir = 0
+"Use relative line numbers
+set relativenumber
 
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
 
+<<<<<<< HEAD
 "Press `?` in netrw to show the quickmap
 autocmd FileType netrw nnoremap ? :help netrw-quickmap<CR>
+=======
+"Keep the current dir and browsing dir synced
+"This helps avoid errors when moving marked files
+let g:netrw_keepdir = 0
+>>>>>>> 491652888833d25b646464ebd9bdfb659fc149a4
 
 "Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']
