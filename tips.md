@@ -148,6 +148,11 @@ Use `<ctrl v>` to select columns? I don't know the terminology.
 
 # Find and Replace
 
+Use `/` to search forward in the current file.
+Use `?` to search backward in the current file.
+Add `\c` anywhere in your search term to be case insensitive.
+
+
 Use `:%s/before/after` to substitute the first instance of "before" with "after".
 Use `g&` to apply the previous substitution to the entire file.
 Use `:s/` to substitute only on the current line.

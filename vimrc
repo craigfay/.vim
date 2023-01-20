@@ -72,9 +72,6 @@ set listchars=tab:›\ ,eol:¬,trail:⋅
 "Automatically update file diffs
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
-"Automatically change directories when opening files
-"set autochdir
-
 "Show matches for file searches above the command line
 set wildmenu
 
@@ -92,6 +89,10 @@ set wildignore+=*/.git/*,*/node_modules/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
 "Use relative line numbers
 set relativenumber
+
+"Make searches case insensitive unless a capital letter is used
+set ignorecase
+set smartcase
 
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
