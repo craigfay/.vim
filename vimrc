@@ -94,8 +94,12 @@ let g:netrw_keepdir = 0
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
 
+"Press `?` in netrw to show the quickmap
+autocmd FileType netrw nnoremap ? :help netrw-quickmap<CR>
+
 "Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']
+
 
 " Vim Tips
 " - Use <g><q><q> to format long markdown lines nicely.

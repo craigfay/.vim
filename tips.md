@@ -16,6 +16,22 @@ Use `10kj` to delete the next 10 lines upward
 
 Use `u` and `<ctrl> r` to undo / redo.
 
+# Netrw
+
+Use `:help netrw-quickmap` to list netrw commands.
+Press `c` to make the browsing directory the current working directory.
+Press `C` to make the current netrw window the "editing window".
+Use `gh` to quickly show / hide dotfiles
+Use `md` to open a diff of up to 3 marked files.
+Use `mT` to apply ctags to marked file.
+Use `mu` to unmark all marked files.
+Use `mx` to apply an arbitrary shell command to marked files
+Use `mx` to compress or uncompress marked files
+Use `qb` to list bookmarked files.
+Use `qf` to list information for the file under the cursor.
+Use `s` to cycle sorting style by name, time or file size
+
+
 # Motions
 
 Get fast with `w`, `f`, and `t`.
