@@ -156,6 +156,7 @@ Add `\c` anywhere in your search term to be case insensitive.
 Use `:%s/before/after` to substitute the first instance of "before" with "after".
 Use `g&` to apply the previous substitution to the entire file.
 Use `:s/` to substitute only on the current line.
+Press `&` to repeat the previous substitution.
 
 Use :vimgrep 'pattern' filepath to search the codebase, and :cn, :cp, :cnf,
 :cnp to jump between matches. Use :cr to return to the first match.
