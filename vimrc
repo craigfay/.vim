@@ -23,6 +23,10 @@ let mapleader = ','
 "Easily edit the vimrc file
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
+"Easily list the path of the file in the buffer
+nmap <Leader>fp :echo expand('%:p')<cr>
+"
+
 "Automatically source the vimrc file on save. The group keeps vim from sourcing recursively.
 augroup autosourcing
 autocmd!

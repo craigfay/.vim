@@ -8,6 +8,7 @@ Use `vi{` to select everything inside the current curly brackets.
 Use `ci{` to change the contents of the nearest curly bracket.
 Use `viw` to visually select the entirety of the current word. 
 Use `viW` to visually select the entirety of the current non-whitespace chunk. 
+Use `cf"` to change the contents between the cursor and the next double quote.
 Use `10dj` to delete the next 10 lines downward (good with relative number)
 Use `10kj` to delete the next 10 lines upward
 
