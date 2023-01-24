@@ -1,3 +1,5 @@
+"TODO put me somewhere better
+"https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/
 
 "Open quickfix windows in a full-width split
 botright cwindow
