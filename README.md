@@ -27,6 +27,12 @@ rm -Rf .git/modules/pack/plugins/start/<plugin-name>
 git commit
 ```
 
+# How to Revert Changes to Plugins
+```
+git submodule deinit -f .
+git submodule update --init
+```
+
 
 # Where Can I Put My RC File?
 
