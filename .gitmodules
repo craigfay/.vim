@@ -7,3 +7,18 @@
 [submodule "pack/plugins/start/supertab"]
 	path = pack/plugins/start/supertab
 	url = git@github.com:ervandew/supertab.git
+[submodule "pack/plugins/start/vim-snippets"]
+	path = pack/plugins/start/vim-snippets
+	url = git@github.com:honza/vim-snippets.git
+[submodule "pack/plugins/start/vim-addon-mw-utils"]
+	path = pack/plugins/start/vim-addon-mw-utils
+	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
+[submodule "pack/plugins/start/tlib"]
+	path = pack/plugins/start/tlib
+	url = git@github.com:tomtom/tlib_vim.git
+[submodule "pack/plugins/vim-snipmate"]
+	path = pack/plugins/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "pack/plugins/start/vim-snipmate"]
+	path = pack/plugins/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
