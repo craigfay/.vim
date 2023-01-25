@@ -235,3 +235,4 @@ Use `zr` and `zm` to open and close all folds.
 # Misc
 
 Use `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g` to get a staircase effect.
+Use `:scriptnames` to see a list of the files that are affecting vim's configuration
