@@ -111,3 +111,6 @@ let g:svelte_preprocessors = ['typescript']
 "Use a non-deprecated snippet format
 let g:snipMate = { 'snippet_version' : 1 }
 
+let g:snips_trigger_key = '<C-J>'
+"let g:snips_trigger_key_backwards = '<>'
+

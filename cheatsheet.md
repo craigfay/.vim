@@ -1,4 +1,13 @@
 
+# Terminal Tab Management on OSX
+
+`<cmd t>` to open a new terminal tab
+
+`<cmd w>` to close the current terminal tab
+
+`<ctrl tab>` and `<ctrl shift tab>` to cycle terminal tabs
+
+
 # File Browsing with Netrw
 
 `:e .` to open a netrw file browser in the current directory
@@ -41,6 +50,7 @@ Use `:term` or `:vert term` to open a terminal window as a split. Use `exit` to 
 
 Hold shift while using the commands to move between splits to move splits around.
 
+
 # Manage Multiple Editor Tabs
 
 `:tabedit <filename>` to open a file in a new tab.
@@ -59,6 +69,7 @@ From netrw, use `t` to open the file under the cursor in a new tab.
 `:w` and `:q` to write and quit
 
 Prefix any yank with `“*` to copy to the system clipboard.
+
 
 # Movement Essentials
 
@@ -87,6 +98,9 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `,` to repeat the last motion in normal mode (in reverse!)
 
 `.` in normal mode to repeat the last command
+
+`<ctrl c>` and `<ctrl u>` to move up and down by half a page
+
 
 # Combining Normal Mode Motions
 
@@ -120,24 +134,13 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 
 
-# Diffing Files
-
-`[c` and `]c` to jump between regions of the diff.
-
-`:diffget` or `do` to pull in the current change from the opposite file.
-
-`:diffput` or `dp` to push the current change into the opposite file.
-
-`:diffupdate` to re-scan your open files for a diff.
-
-
 # Multi-File Navigation
+
+`:b#` to open the last open buffer.
 
 `gf` to open a file whose name is under the cursor.
 
 `<ctrl w> gf` to open the file under the cursor in a new tab.
-
-`:b#` to open the last open buffer.
 
 `:pwd` to show the current directory
 
@@ -156,7 +159,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `g&` to apply the previous substitution to the entire file.
 
-`:vimgrep 'pattern' filepath` to search the codebase
+`:vimgrep '<pattern>' <filepath>` to search the codebase
 
 `:cn`, `:cp`, `:cnf` `:cnp` to jump between matches.
 
@@ -191,10 +194,22 @@ Type `@w` in normal mode to replay the macro.
 Type `3@w` to replay the macro 3 times
 
 
+# Diffing Files
+
+`[c` and `]c` to jump between regions of the diff.
+
+`:diffget` or `do` to pull in the current change from the opposite file.
+
+`:diffput` or `dp` to push the current change into the opposite file.
+
+`:diffupdate` to re-scan your open files for a diff.
+
+
 # Misc
 
 Source control your `~/.vim` directory.
 
 Learn manage plugins, colors, etc.. as git submodules
 
-Learn from others' RC Files
+Look at other people's RC files
+
