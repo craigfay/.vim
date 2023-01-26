@@ -1,6 +1,7 @@
 "TODO put me somewhere better
 "https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/
-
+"
+"
 "Open quickfix windows in a full-width split
 botright cwindow
 
@@ -109,6 +110,9 @@ let g:netrw_keepdir = 0
 
 "Allow svelte-vim plugin to recognize nested typescript
 let g:svelte_preprocessors = ['typescript']
+
+"Use a non-deprecated snippet format
+let g:snipMate = { 'snippet_version' : 1 }
 
 
 " Vim Tips

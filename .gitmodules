@@ -16,9 +16,9 @@
 [submodule "pack/plugins/start/tlib"]
 	path = pack/plugins/start/tlib
 	url = git@github.com:tomtom/tlib_vim.git
-[submodule "pack/plugins/vim-snipmate"]
-	path = pack/plugins/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule "pack/plugins/start/vim-snipmate"]
 	path = pack/plugins/start/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "pack/plugins/start/emmet-vim"]
+	path = pack/plugins/start/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
