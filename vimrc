@@ -1,6 +1,3 @@
-"TODO put me somewhere better
-"https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier/
-"
 "
 "Open quickfix windows in a full-width split
 botright cwindow
@@ -114,30 +111,3 @@ let g:svelte_preprocessors = ['typescript']
 "Use a non-deprecated snippet format
 let g:snipMate = { 'snippet_version' : 1 }
 
-
-" Vim Tips
-" - Use <g><q><q> to format long markdown lines nicely.
-" - Use <g><j> to move down to the next perceived line when a line is
-"   wrapping.
-" - Use <d><i><{> to delete everything inside the current curly bracket.
-"   This works with other characters as well, like parentheses, quotes, and
-"   square brackets. <c><i><t> works for HTML tags.
-" - Use <c><i> ('change inner') the same way you would use <d><i>
-" - Use <.> in normal mode to repeat the last command
-" - Use <g><g><=><G> in normal mode to reformat the entire file
-" - Use :vimgrep 'pattern' filepath to search the codebase, and :cn, :cp,
-"   :cnf, :cnp to jump between matches. Use :cr to return to the first match.
-" - After selecting in visual mode, use <"><*><y> to copy to the system
-"   clipboard
-" - use :b <tab> to cycle through all open (buffered) files
-" - use <ctrl> <n> to autocomplete. Hold <ctrl> and use <n> and <p> to scroll
-" - use <ctrl><x><f> to autocomplete filenames
-" - use <i> in netrw to toggle list style
-" - use <I> in netrw to hide banner
-" - use :only to close all other splits except the current
-" - use <t> from netrw to open a file in a new tab
-" - use <g><t> and <g><T> to cycle through tabs
-" - use <1><g><t> to go to the first tab
-" - use <g><f> to open the file whose name you're hovering over
-" - use :b# to open the previous buffer
-"

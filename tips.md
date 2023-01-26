@@ -139,7 +139,7 @@ Use `:pwd` to show the current directory
 
 
 ```
-~/.vimrc
+~/.vim/vimrc
 ```
 
 # Visual Mode
