@@ -99,7 +99,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `.` in normal mode to repeat the last command
 
-`<ctrl c>` and `<ctrl u>` to move up and down by half a page
+`<ctrl d>` and `<ctrl u>` to move up and down by half a page
 
 
 # Combining Normal Mode Motions
