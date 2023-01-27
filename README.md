@@ -177,11 +177,13 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `ggVG` to select the entire file in visual mode.
 
-`ci{` to change the contents of the nearest curly bracket.
+`ci(` to change the contents of the nearest pair of parentheses.
 
 `cf"` to change the contents between the cursor and the next double quote.
 
-`yt` to yank the HTML tag under the cursor
+`yat` to yank the HTML tag under the cursor
+
+`=at` to fix indentation around the current tag
 
 `cit` to change the inside of an html tag
 
