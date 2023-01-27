@@ -54,6 +54,8 @@ Use `:term` or `:vert term` to open a terminal window as a split. Use `exit` to 
 
 Hold shift while using the commands to move between splits to move splits around.
 
+Use `<ctrl w><shift t>` to open the current split in a new tab.
+
 
 # Manage Multiple Editor Tabs
 
@@ -118,8 +120,8 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `,` to repeat the last motion in normal mode (in reverse!)
 
-`<ctrl u>` and `<ctrl d>` to move up and down by half a page. 
 
+`<ctrl d>` and `<ctrl u>` to move up and down by half a page
 
 # Modifiers
 
@@ -128,7 +130,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `a` around
 
 
-# Combining Normal Mode Motions
+# Examples of Composeability
 
 `7dj` deletes the next 7 lines in the `j` direction (down)
 
@@ -152,6 +154,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `viW` to select a WORD (continuous chars inside whitespace)
 
+
 # Formatting
 
 `gq` to format long lines
@@ -169,7 +172,6 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `~` to change the capitalization of a single character
 
 `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g` to get a staircase effect.
-
 
 
 # Multi-File Navigation
