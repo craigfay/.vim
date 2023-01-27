@@ -169,8 +169,22 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `,` to repeat the last motion in normal mode (in reverse!)
 
+`<ctrl d>` move up by a half page
 
-`<ctrl d>` and `<ctrl u>` to move up and down by half a page
+`<ctrl u>` move up by a half page
+
+`<ctrl y>` scroll the page up
+
+`<ctrl e>` scroll the page down
+
+`zz` move the current line to the middle of the screen
+
+`zt` move the current line to the top of the screen
+
+`zb` move the current line to the bottom of the screen
+
+
+
 
 ### Modifiers
 
@@ -181,6 +195,10 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 ### Examples of Composeability
 
+`15k` move the cursor up by 15 lines
+
+`3W` move the cursor to the third WORD (continuous non-whitespace chars)
+
 `7dj` deletes the next 7 lines in the `j` direction (down)
 
 `5>j` to indent the next 5 lines. Good to pair with `.`
@@ -189,8 +207,9 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `ci(` to change the contents of the nearest pair of parentheses.
 
-`ct"` to change the contents between the cursor and the next double quote.
+`da{` delete the contents of the nearest curly bracket, including the brackets
 
+`ct"` to change the contents between the cursor and the next double quote.
 `yat` to yank the HTML tag under the cursor
 
 `=at` to fix indentation around the current tag
