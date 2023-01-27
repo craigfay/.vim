@@ -134,10 +134,18 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `>` indent and `<` unindent
 
-`.` repeat previous verb
+`=` to correct indentation
+
+`gu` and `gU` to capitalize and un-capitalize
+
+`g~` to change the capitalization
+
+`~` to change the capitalization of a single character
+
+`.` repeat previous action
 
 
-### Motions
+### Moving the Cursor
 
 `hjkl` for moving the cursor
 
@@ -175,6 +183,8 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `7dj` deletes the next 7 lines in the `j` direction (down)
 
+`5>j` to indent the next 5 lines. Good to pair with `.`
+
 `ggVG` to select the entire file in visual mode.
 
 `ci(` to change the contents of the nearest pair of parentheses.
@@ -187,8 +197,6 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `cit` to change the inside of an html tag
 
-`5>j` to indent the next 5 lines. Good to pair with `.`
-
 `>i{` indent everything inside the enclosing curly braces
 
 `vi{>` indent everything inside the enclosing curly braces (with highlighting)
@@ -196,6 +204,8 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `vi"p` to select inside of double quotes and paste
 
 `viW` to select a WORD (continuous chars inside whitespace)
+
+`gUiW` to uppercase the inside of the current WORD
 
 
 ### Formatting
@@ -208,18 +218,12 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `>l` and `<h` to move endentation to the right and left.
 
-`gu` and `gU` to capitalize and un-capitalize
-
-`g~` to change the capitalization
-
-`~` to change the capitalization of a single character
-
 `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g` to get a staircase effect.
 
 
 ### Multi-File Navigation
 
-`:b###` to open the last open buffer. ("back")
+`:b#` to open the last open buffer. ("back")
 
 `gf` to open a file whose name is under the cursor.
 
