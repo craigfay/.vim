@@ -21,18 +21,19 @@ set noswapfile
 let mapleader = ','
 
 "Easily edit the vimrc file
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>rc :tabedit $MYVIMRC<cr>
 
 "Easily list the path of the file in the buffer
 nmap <Leader>fp :echo expand('%:p')<cr>
-"
+
+"Creating an allias for vertical split resizing
+command! -nargs=1 Vr vertical resize <args>
 
 "Automatically source the vimrc file on save. The group keeps vim from sourcing recursively.
 augroup autosourcing
 autocmd!
 autocmd BufWritePost ~/.vim/vimrc source %
 augroup END
-
 
 "Use incremental search
 set incsearch

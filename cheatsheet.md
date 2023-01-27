@@ -176,7 +176,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 # Multi-File Navigation
 
-`:b#` to open the last open buffer.
+`:b#` to open the last open buffer. ("back")
 
 `gf` to open a file whose name is under the cursor.
 
