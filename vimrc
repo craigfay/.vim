@@ -85,6 +85,13 @@ set cursorline
 "Highlight all search matches
 set hlsearch
 
+"Turn off highlighting once the search is finished
+augroup vimrc-incsearch-highlight
+  autocmd!
+  autocmd CmdlineEnter /,\? :set hlsearch
+  autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
+
 "Stop vim from beeping at mistakes
 set visualbell
 

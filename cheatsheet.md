@@ -14,13 +14,17 @@
 
 `:help netrw-quickmap` to list netrw commands.
 
-`i` to cycle file tree modes
+`i` to cycle file list style. Option 3/4 is tree mode.
 
 `-` to go to the parent directory
 
 `v` to open the file under the cursor in a new vertical split
 
 `t` to open the file under the cursor in a new tab
+
+`I` to toggle the banner
+
+`r` to reverse the list's sort order
 
 
 # Marking Files in Netrw
@@ -71,15 +75,32 @@ From netrw, use `t` to open the file under the cursor in a new tab.
 Prefix any yank with `“*` to copy to the system clipboard.
 
 
-# Movement Essentials
+# Verbs 
+
+`y` copy ("yank")
+
+`Y` copy line
+
+`d` delete
+
+`D` delete line
+
+`c` change
+
+`C` change line
+
+`>` indent and `<` unindent
+
+`.` repeat previous verb
+
+
+# Motions
 
 `hjkl` for moving the cursor
 
 `web` for jumping between words
 
 `ftFT` for searching within a line
-
-`yy`, `dd`, `p`, and `P` for copy-pasting
 
 `%` for jumping to matching bracket
 
@@ -97,9 +118,14 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `,` to repeat the last motion in normal mode (in reverse!)
 
-`.` in normal mode to repeat the last command
+`<ctrl u>` and `<ctrl d>` to move up and down by half a page. 
 
-`<ctrl c>` and `<ctrl u>` to move up and down by half a page
+
+# Modifiers
+
+`i` inside
+
+`a` around
 
 
 # Combining Normal Mode Motions
@@ -113,6 +139,18 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `cf"` to change the contents between the cursor and the next double quote.
 
 `yt` to yank the HTML tag under the cursor
+
+`cit` to change the inside of an html tag
+
+`5>j` to indent the next 5 lines. Good to pair with `.`
+
+`>i{` indent everything inside the enclosing curly braces
+
+`vi{>` indent everything inside the enclosing curly braces (with highlighting)
+
+`vi"p` to select inside of double quotes and paste
+
+`viW` to select a WORD (continuous chars inside whitespace)
 
 # Formatting
 
