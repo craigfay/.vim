@@ -49,7 +49,7 @@ git submodule update --init
 `<ctrl tab>` and `<ctrl shift tab>` to cycle terminal tabs
 
 
-# File Browsing with Netrw
+### File Browsing with Netrw
 
 `:e .` to open a netrw file browser in the current directory
 
@@ -68,7 +68,7 @@ git submodule update --init
 `r` to reverse the list's sort order
 
 
-# Marking Files in Netrw
+### Marking Files in Netrw
 
 `mt` to set a target directory
 
@@ -79,7 +79,7 @@ git submodule update --init
 `md` to open a diff of up to 3 marked files.
 
 
-# Manage Screen Splits
+### Manage Screen Splits
 
 `sp <filename>` to open a new horizontal split
 
@@ -98,7 +98,7 @@ Hold shift while using the commands to move between splits to move splits around
 Use `<ctrl w><shift t>` to open the current split in a new tab.
 
 
-# Manage Multiple Editor Tabs
+### Manage Multiple Editor Tabs
 
 `:tabedit <filename>` to open a file in a new tab.
 
@@ -109,7 +109,7 @@ Use `<ctrl w><shift t>` to open the current split in a new tab.
 From netrw, use `t` to open the file under the cursor in a new tab.
 
 
-# Editing Basics
+### Editing Basics
 
 `u` and `<ctrl r` for undo and redo
 
@@ -118,7 +118,7 @@ From netrw, use `t` to open the file under the cursor in a new tab.
 Prefix any yank with `“*` to copy to the system clipboard.
 
 
-# Verbs 
+### Verbs 
 
 `y` copy ("yank")
 
@@ -137,7 +137,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `.` repeat previous verb
 
 
-# Motions
+### Motions
 
 `hjkl` for moving the cursor
 
@@ -164,14 +164,14 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `<ctrl d>` and `<ctrl u>` to move up and down by half a page
 
-# Modifiers
+### Modifiers
 
 `i` inside
 
 `a` around
 
 
-# Examples of Composeability
+### Examples of Composeability
 
 `7dj` deletes the next 7 lines in the `j` direction (down)
 
@@ -196,7 +196,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `viW` to select a WORD (continuous chars inside whitespace)
 
 
-# Formatting
+### Formatting
 
 `gq` to format long lines
 
@@ -215,9 +215,9 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g` to get a staircase effect.
 
 
-# Multi-File Navigation
+### Multi-File Navigation
 
-`:b#` to open the last open buffer. ("back")
+`:b###` to open the last open buffer. ("back")
 
 `gf` to open a file whose name is under the cursor.
 
@@ -230,9 +230,11 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `:only` to close all other splits except the current
 
 
-# Find and Replace
+### Find and Replace
 
 `:%s/before/after` to substitute the first instance of "before" with "after".
+
+`:49,$s/before/after` to substitute between the 49th and final line
 
 `:s/` to substitute only on the current line.
 
@@ -253,7 +255,7 @@ Use `gd` or `gD` to go to a local declaration of a variable.
 `gD` always starts from the top of the file.
 
 
-# Autocomplete
+### Autocomplete
 
 `<ctrl> n` to autocomplete.
 
@@ -264,7 +266,7 @@ Use `gd` or `gD` to go to a local declaration of a variable.
 `<ctrl> n` and `<ctrl> p` to cycle through autocomplete options.
 
 
-# Macros
+### Macros
 
 Press `q` in normal mode to start recording a macro, and then another key, let's say `w` that the macro will be assigned to.
 
@@ -275,7 +277,7 @@ Type `@w` in normal mode to replay the macro.
 Type `3@w` to replay the macro 3 times
 
 
-# Diffing Files
+### Diffing Files
 
 `[c` and `]c` to jump between regions of the diff.
 
@@ -286,7 +288,7 @@ Type `3@w` to replay the macro 3 times
 `:diffupdate` to re-scan your open files for a diff.
 
 
-# Misc
+### Misc
 
 Source control your `~/.vim` directory.
 
