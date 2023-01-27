@@ -118,33 +118,6 @@ From netrw, use `t` to open the file under the cursor in a new tab.
 Prefix any yank with `“*` to copy to the system clipboard.
 
 
-### Verbs 
-
-`y` copy ("yank")
-
-`Y` copy line
-
-`d` delete
-
-`D` delete line
-
-`c` change
-
-`C` change line
-
-`>` indent and `<` unindent
-
-`=` to correct indentation
-
-`gu` and `gU` to capitalize and un-capitalize
-
-`g~` to change the capitalization
-
-`~` to change the capitalization of a single character
-
-`.` repeat previous action
-
-
 ### Moving the Cursor
 
 `hjkl` for moving the cursor
@@ -182,6 +155,33 @@ Prefix any yank with `“*` to copy to the system clipboard.
 `zt` move the current line to the top of the screen
 
 `zb` move the current line to the bottom of the screen
+
+
+### Verbs 
+
+`y` copy ("yank")
+
+`Y` copy line
+
+`d` delete
+
+`D` delete line
+
+`c` change
+
+`C` change line
+
+`>` indent and `<` unindent
+
+`=` to correct indentation
+
+`gu` and `gU` to capitalize and un-capitalize
+
+`g~` to change the capitalization
+
+`~` to change the capitalization of a single character
+
+`.` repeat previous action
 
 
 
