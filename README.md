@@ -189,7 +189,7 @@ Prefix any yank with `“*` to copy to the system clipboard.
 
 `ci(` to change the contents of the nearest pair of parentheses.
 
-`cf"` to change the contents between the cursor and the next double quote.
+`ct"` to change the contents between the cursor and the next double quote.
 
 `yat` to yank the HTML tag under the cursor
 
