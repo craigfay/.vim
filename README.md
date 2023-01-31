@@ -313,7 +313,6 @@ Type `3@w` to replay the macro 3 times
 
 `:diffupdate` to re-scan your open files for a diff.
 
-
 ### Misc
 
 Source control your `~/.vim` directory.
