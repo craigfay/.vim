@@ -37,6 +37,7 @@ git submodule update --init
 
 [Integralist Blog](https://www.integralist.co.uk/posts/vim/)
 [Vim and Composeability](https://ferd.ca/vim-and-composability.html)
+[Vim Registers](https://www.brianstorti.com/vim-registers/)
 
 # Cheatsheet
 
