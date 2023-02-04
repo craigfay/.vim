@@ -107,6 +107,28 @@ set relativenumber
 set ignorecase
 set smartcase
 
+
+"Configuring the status line
+set statusline=
+"buffer number
+set statusline +=%1*\ %n\ %*
+"current file name
+set statusline+=%f\ %2*%m\ %1*%h
+"warning messages if exist
+set statusline+=%#warningmsg# 
+"source control details
+set statusline+=%{fugitive#statusline()}
+"file is modified flag
+set statusline+=%*
+"file encoding, file format, file type
+set statusline+=%r%=[%{strlen(&ft)?&ft:'none'}\ %{&encoding}]\ %12.(%c:%l/%L%)\
+"Character under cursor
+set statusline +=%f\ 0x%04B\ %*
+
+
+"Always give the last window a status line
+set laststatus=2
+
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
 
@@ -119,16 +141,4 @@ let g:svelte_preprocessors = ['typescript']
 
 "Use a non-deprecated snippet format
 let g:snipMate = { 'snippet_version' : 1 }
-
-"let g:snips_trigger_key = '<C-J>'
-"let g:snips_trigger_key_backwards = '<>'
-
-"Configuring the status line
-set statusline=
-set statusline+=%f\ %2*%m\ %1*%h "current file name
-set statusline+=%#warningmsg# "warning messages if exist
-set statusline+=%{fugitive#statusline()} "source control details
-set statusline+=%* "display a [+] if there are any changes to the file since saving
-set statusline+=%r%=[%{&encoding}\ %{&fileformat}\ %{strlen(&ft)?&ft:'none'}]\ %12.(%c:%l/%L%) "file encoding, file format, file type
-set laststatus=2
 
