@@ -1,4 +1,5 @@
-"
+
+
 "Open quickfix windows in a full-width split
 botright cwindow
 
@@ -122,6 +123,12 @@ let g:snipMate = { 'snippet_version' : 1 }
 "let g:snips_trigger_key = '<C-J>'
 "let g:snips_trigger_key_backwards = '<>'
 
-"Setting the theme for the vim-airline plugin
-let g:airline_theme='luna'
+"Configuring the status line
+set statusline=
+set statusline+=%f\ %2*%m\ %1*%h "current file name
+set statusline+=%#warningmsg# "warning messages if exist
+set statusline+=%{fugitive#statusline()} "source control details
+set statusline+=%* "display a [+] if there are any changes to the file since saving
+set statusline+=%r%=[%{&encoding}\ %{&fileformat}\ %{strlen(&ft)?&ft:'none'}]\ %12.(%c:%l/%L%) "file encoding, file format, file type
+set laststatus=2
 
