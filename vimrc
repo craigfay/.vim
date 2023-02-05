@@ -1,5 +1,4 @@
 
-
 "Open quickfix windows in a full-width split
 botright cwindow
 
@@ -10,7 +9,16 @@ set re=2
 syntax enable
 
 "Color Scheme
-colo dogrun
+colorscheme dogrun
+
+"Press Shift + S to get the syntax group of the word under the cursor
+nmap <S-S> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
 "Enable Line Numbers
 set number
@@ -29,6 +37,9 @@ nmap <Leader>fp :echo expand('%:p')<cr>
 
 "Creating an allias for vertical split resizing
 command! -nargs=1 Vr vertical resize <args>
+
+"Use the command `L` to explore files with Lex at 20%
+command! L 20Lex<args>
 
 "Automatically source the vimrc file on save. The group keeps vim from sourcing recursively.
 augroup autosourcing
@@ -141,4 +152,5 @@ let g:svelte_preprocessors = ['typescript']
 
 "Use a non-deprecated snippet format
 let g:snipMate = { 'snippet_version' : 1 }
+
 

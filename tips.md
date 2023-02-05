@@ -238,3 +238,4 @@ Use `<ctrl a>` and `<ctrl x>` to increment and decrement numbers. Prefix with `g
 Use `:scriptnames` to see a list of the files that are affecting vim's configuration
 Use `:packadd <plugin-name>` to explicitly load a plugin
 Use `:helptags ALL` to generate help pages for all plugins
+Press `K` in the help docs to go to the word under the cursor.
