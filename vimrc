@@ -96,6 +96,10 @@ nnoremap <C-p> :find ./**/*
 "Show matches for file searches above the command line
 set wildmenu
 
+
+"Use a vertical (pop-up-menu) wildmenu for autocomplete
+set wildoptions=pum
+
 "Highlight all search matches
 set hlsearch
 
