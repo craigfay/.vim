@@ -1,4 +1,5 @@
 
+
 "Open quickfix windows in a full-width split
 botright cwindow
 
@@ -89,11 +90,11 @@ set listchars=tab:›\ ,eol:¬,trail:⋅
 "Automatically update file diffs
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
+"Initiate a plugin-less 'fuzzy find' with ctrl-p
+nnoremap <C-p> :find ./**/*
+
 "Show matches for file searches above the command line
 set wildmenu
-
-"Highlight the current line
-set cursorline
 
 "Highlight all search matches
 set hlsearch
@@ -105,11 +106,14 @@ augroup vimrc-incsearch-highlight
   autocmd CmdlineLeave /,\? :set nohlsearch
 augroup END
 
-"Stop vim from beeping at mistakes
+"Highlight the current line
+set cursorline
+
+"Stop vim from beeping at mistakes, show a flash on the screen instead
 set visualbell
 
 "Ignore patterns during wildcard searches
-set wildignore+=*/.git/*,*/node_modules/*,*/.hg/*,*/.svn/*.,*/.DS_Store
+set wildignore+=*/.git/*,*/node_modules/*,*/target/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
 "Use relative line numbers
 set relativenumber
