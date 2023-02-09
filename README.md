@@ -11,7 +11,16 @@ git submodule add <git-address> ./pack/plugins/start/<plugin-name>`
 ```
 
 
-# How To Update Plugins
+# How to Sync Local Plugins
+
+Use this if your local machine doesn't seem to have the correct plugins installed 
+
+```
+git submodule update --init
+```
+
+
+# How To Update Plugin Versions
 
 ```
 git submodule update --remote --merge
