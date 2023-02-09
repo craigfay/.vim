@@ -78,8 +78,6 @@ autocmd Filetype rs setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd Filetype py setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd Filetype kt setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
-
-
 "Auto indent
 set autoindent
 
@@ -96,9 +94,10 @@ nnoremap <C-p> :find ./**/*
 "Show matches for file searches above the command line
 set wildmenu
 
-
 "Use a vertical (pop-up-menu) wildmenu for autocomplete
-set wildoptions=pum
+if v:version >= 900
+    set wildoptions=pum
+endif
 
 "Highlight all search matches
 set hlsearch
@@ -129,21 +128,29 @@ set smartcase
 
 "Configuring the status line
 set statusline=
+
 "buffer number
 set statusline +=%1*\ %n\ %*
+
 "current file name
 set statusline+=%f\ %2*%m\ %1*%h
+
 "warning messages if exist
 set statusline+=%#warningmsg# 
+
 "source control details
-set statusline+=%{fugitive#statusline()}
+if exists("*fugitive#statusline")
+    set statusline+=%{fugitive#statusline()}
+endif
+
 "file is modified flag
 set statusline+=%*
+
 "file encoding, file format, file type
 set statusline+=%r%=[%{strlen(&ft)?&ft:'none'}\ %{&encoding}]\ %12.(%c:%l/%L%)\
+
 "Character under cursor
 set statusline +=%f\ 0x%04B\ %*
-
 
 "Always give the last window a status line
 set laststatus=2
