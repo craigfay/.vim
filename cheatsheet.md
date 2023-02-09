@@ -10,7 +10,7 @@
 
 # File Browsing with Netrw
 
-`:e .` to open a netrw file browser in the current directory
+`:e .` to open a netrw file browser in the current directory. Short for `:Ex` (explorer)
 
 `:help netrw-quickmap` to list netrw commands.
 
@@ -21,6 +21,8 @@
 `v` to open the file under the cursor in a new vertical split
 
 `t` to open the file under the cursor in a new tab
+
+`:Lex` for IDE-like screen splitting
 
 
 # Marking Files in Netrw
