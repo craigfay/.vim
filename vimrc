@@ -1,5 +1,6 @@
 
 
+
 "Open quickfix windows in a full-width split
 botright cwindow
 
@@ -32,6 +33,9 @@ let mapleader = ','
 
 "Easily edit the vimrc file
 nmap <Leader>rc :tabedit $MYVIMRC<cr>
+
+"Easily edit the shell profile
+nmap <Leader>pr :tabedit ~/.profile<cr>
 
 "Easily list the path of the file in the buffer
 nmap <Leader>fp :echo expand('%:p')<cr>
@@ -150,6 +154,9 @@ set laststatus=2
 
 "Highlight marked files in netrw
 hi! link netrwMarkFile Search
+
+"Enable Nested Syntax Highlighting in Markdown Files
+let g:markdown_fenced_languages = ['html', 'python', 'js', 'rust']
 
 "Keep the current dir and browsing dir synced
 "This helps avoid errors when moving marked files
