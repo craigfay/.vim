@@ -31,14 +31,29 @@ set noswapfile
 "Change the default leader key
 let mapleader = ','
 
-"Easily edit the vimrc file
+"Quickly edit the vimrc file with `,rc`
 nmap <Leader>rc :tabedit $MYVIMRC<cr>
 
-"Easily edit the shell profile
+"Quickly edit the shell profile with `,pr`
 nmap <Leader>pr :tabedit ~/.profile<cr>
 
-"Easily list the path of the file in the buffer
-nmap <Leader>fp :echo expand('%:p')<cr>
+"Quickly list the path of the file in the buffer with `,f`
+nmap <Leader>f :echo expand('%:p')<cr>
+
+"Quickly open a file explorer with `,e`
+nmap <Leader>e :e .<cr>
+
+"Quickly open a file explorer (in a vertical split) with `,v`
+nmap <Leader>v :vs .<cr>
+
+"Quickly open a file explorer (in a horizontal split) with `,s`
+nmap <Leader>s :sp .<cr>
+
+"Quickly open the previous buffer with `,b`
+nmap <Leader>b :b#<cr>
+
+"Quickly close the current buffer with `,q`
+nmap <Leader>q :q<cr>
 
 "Creating an allias for vertical split resizing
 command! -nargs=1 Vr vertical resize <args>
