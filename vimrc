@@ -166,10 +166,12 @@ endif
 set statusline+=%*
 
 "file encoding, file format, file type
-set statusline+=%r%=[%{strlen(&ft)?&ft:'none'}\ %{&encoding}]\ %12.(%c:%l/%L%)\
+set statusline+=%r%=[%{strlen(&ft)?&ft:'none'}\ %{&encoding}]\ %12.(%c:%l/%L%)\ 
 
 "Character under cursor
-set statusline +=%f\ 0x%04B\ %*
+set statusline+=%f\ 0x%04B\ %*
+
+set statusline+=%{wordcount()['words']}\ words\ 
 
 "Always give the last window a status line
 set laststatus=2
