@@ -3,13 +3,11 @@
 
 Since version 8, Vim will natively auto-load plugins in directories matching `~/.vim/pack/*/start/`. This makes it convenient to manage plugins using git submodules instead of a package manager like [Plug](https://github.com/junegunn/vim-plug) or [Pathogen](https://github.com/tpope/vim-pathogen).
 
-
 # How To Add Plugins
 
 ```
 git submodule add <git-address> ./pack/plugins/start/<plugin-name>`
 ```
-
 
 # How to Sync Local Plugins
 
@@ -18,7 +16,6 @@ Use this if your local machine doesn't seem to have the correct plugins installe
 ```
 git submodule update --init
 ```
-
 
 # How To Update Plugin Versions
 
@@ -322,6 +319,16 @@ Type `3@w` to replay the macro 3 times
 `:diffput` or `dp` to push the current change into the opposite file.
 
 `:diffupdate` to re-scan your open files for a diff.
+
+## Migrating to Neovim
+
+After installing neovim, add this to `~/.config/nvim/init.vim`:
+
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vim/vimrc
+```
 
 ### Misc
 

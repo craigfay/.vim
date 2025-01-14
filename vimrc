@@ -16,10 +16,10 @@ colorscheme dogrun
 "Press Shift + S to get the syntax group of the word under the cursor
 nmap <S-S> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
-    if !exists("*synstack")
-        return
-    endif
-    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+if !exists("*synstack")
+    return
+endif
+echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
 "Enable Line Numbers
@@ -109,6 +109,23 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 "Initiate a plugin-less 'fuzzy find' with ctrl-p
 nnoremap <C-p> :find ./**/*
+
+"Remapping scrolling behavior to use CTRL + J and CTRL + K,
+"and SHIFT to scroll much faster
+nnoremap <C-k> <C-y>
+nnoremap <C-j> <C-e>
+nnoremap <S-C-k> 10<C-y>
+nnoremap <S-C-j> 10<C-e>
+
+"Making SHIFT + directional buttons move the cursor faster in normal mode
+nnoremap J 4j
+nnoremap K 4k
+nnoremap H 4h
+nnoremap L 4l
+
+"Leaving a few lines above and below the cursor when scrolling
+"to make it easier to see where you're going
+set scrolloff=4
 
 "Show matches for file searches above the command line
 set wildmenu
