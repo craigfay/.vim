@@ -1,5 +1,5 @@
 
-
+command! Ctags execute '!ctags -R .' | echo "tags generated!"
 
 "Open quickfix windows in a full-width split
 botright cwindow
@@ -31,8 +31,13 @@ set noswapfile
 "Change the default leader key
 let mapleader = ','
 
-"Quickly edit the vimrc file with `,rc`
-nmap <Leader>rc :tabedit $MYVIMRC<cr>
+"Quickly edit the default vimrc file with `,drc`
+nmap <Leader>drc :tabedit $MYVIMRC<cr>
+
+"Quickly edit ~/.vim/vimrc file with `,rc`
+"This is helpful when you're using neovim,
+"where $MYVIMRC will point to neovim config
+nmap <Leader>rc :tabedit ~/.vim/vimrc<cr>
 
 "Quickly edit the shell profile with `,pr`
 nmap <Leader>pr :tabedit ~/.profile<cr>
@@ -55,11 +60,12 @@ nmap <Leader>b :b#<cr>
 "Quickly close the current buffer with `,q`
 nmap <Leader>q :q<cr>
 
-"Creating an allias for vertical split resizing
+"Creating aliases for split resizing
 command! -nargs=1 Vr vertical resize <args>
+command! -nargs=1 Hr resize <args>
 
-"Use the command `L` to explore files with Lex at 20%
-command! L 20Lex<args>
+"Creating a shortcut for the vimgrep command
+command! -nargs=* Vg vimgrep <args>
 
 "Automatically source the vimrc file on save. The group keeps vim from sourcing recursively.
 augroup autosourcing
@@ -208,5 +214,30 @@ let g:svelte_preprocessors = ['typescript']
 
 "Use a non-deprecated snippet format
 let g:snipMate = { 'snippet_version' : 1 }
+
+"Always show the column dedicated to signs,
+"which can be used by LSP plugins. Always showing
+"this column prevents jumpiness in the UI
+set signcolumn=yes
+
+"Enable a dedicated column for showing fold markers
+set foldcolumn=1
+
+"Creating a shortcut for go to definition
+nmap <Leader>gd :LspDefinition<CR>
+
+"Creating a shortcut for peeking to definition
+nmap <Leader>pd :LspPeekDefinition<CR>
+
+"Creating a shortcut for renaming a symbol
+nmap <Leader>rn :LspRename<CR>
+
+"Creating a shortcut for finding references
+nmap <Leader>rf :LspReferences<CR>
+
+"Use `gb` to go open a list of buffers.
+"Then enter the desired number and press enter to open it.
+nnoremap gb :ls<CR>:b<Space>
+
 
 

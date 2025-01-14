@@ -39,6 +39,17 @@ git submodule deinit -f .
 git submodule update --init
 ```
 
+## Managing Language Server
+
+The [vim-lsp-settings plugin](https://github.com/mattn/vim-lsp-settings) is
+used to manage LSPs and integrate them with the `vim-lsp` plugin.
+
+Use `:LspInstallServer` to install a language server for the currently open filetype.
+
+Use `:LspUninstallServer <server-name>` to install a language server.
+
+LSP servers are installed in `$HOME/.local/share/vim-lsp-settings/servers`
+
 # Resources
 
 [Integralist Blog](https://www.integralist.co.uk/posts/vim/)
@@ -329,6 +340,9 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vim/vimrc
 ```
+### Neovim Tips
+
+Use `<SPACE>sf` to search files
 
 ### Misc
 

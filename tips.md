@@ -13,6 +13,7 @@ Use `10dj` to delete the next 10 lines downward (good with relative number)
 Use `10kj` to delete the next 10 lines upward
 Use `ggVG` to select the entire file in visual mode.
 
+
 # Insert Mode
 `<ctrl w>` back one character
 `<ctrl u>` back to insert position
@@ -135,6 +136,8 @@ Use `/` from netrw to search for a file by name.
 Use `gf` to open a file whose name is under the cursor.
 Use `<ctrl w> gf` to open the file under the cursor in a new tab.
 Use `:b#` to open the last open buffer.
+Use `:ls` to show a list of recent buffers.
+Use `:b<number>` to open the buffer with the given number.
 Use `:pwd` to show the current directory
 
 
@@ -150,6 +153,8 @@ Use `<ctrl v>` to select columns? I don't know the terminology.
 
 # Find and Replace
 
+Use `*` to go to the next instance of the word under the cursor.
+Use `#` to go to the previous instance of the word under the cursor.
 Use `/` to search forward in the current file.
 Use `?` to search backward in the current file.
 Add `\c` anywhere in your search term to be case insensitive.
