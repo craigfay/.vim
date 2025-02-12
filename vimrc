@@ -158,7 +158,7 @@ set cursorline
 set visualbell
 
 "Ignore patterns during wildcard searches
-set wildignore+=*/.git/*,*/node_modules/*,*/target/*,*/.hg/*,*/.svn/*.,*/.DS_Store
+set wildignore+=*/.git/*,*/node_modules/*,.next/*,*/target/*,*/.hg/*,*/.svn/*.,*/.DS_Store
 
 "Use relative line numbers
 set relativenumber
@@ -238,6 +238,4 @@ nmap <Leader>rf :LspReferences<CR>
 "Use `gb` to go open a list of buffers.
 "Then enter the desired number and press enter to open it.
 nnoremap gb :ls<CR>:b<Space>
-
-
 
