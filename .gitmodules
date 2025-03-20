@@ -25,12 +25,9 @@
 [submodule "pack/plugins/start/vim-fugitive"]
 	path = pack/plugins/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
-[submodule "/Users/craigfay/.vim/pack/plugins/start/copilot"]
-	path = /Users/craigfay/.vim/pack/plugins/start/copilot
+[submodule "pack/plugins/start/copilot"]
+	path = pack/plugins/start/copilot
 	url = git@github.com:github/copilot.vim.git
-[submodule "pack/plugins/start/coc"]
-	path = pack/plugins/start/coc
-	url = git@github.com:neoclide/coc.nvim.git
 [submodule "pack/plugins/start/vim-lsp"]
 	path = pack/plugins/start/vim-lsp
 	url = git@github.com:prabirshrestha/vim-lsp.git
