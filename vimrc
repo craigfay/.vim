@@ -12,6 +12,7 @@ syntax enable
 
 "Color Scheme
 colorscheme dogrun
+set background=dark
 
 "Press Shift + S to get the syntax group of the word under the cursor
 nmap <S-S> :call <SID>SynStack()<CR>
@@ -21,6 +22,10 @@ if !exists("*synstack")
 endif
 echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+"Shorten the time it takes for markers to appear
+"This is helpful for the vim-gitgutters plugin
+set updatetime=100
 
 "Enable Line Numbers
 set number
@@ -59,6 +64,18 @@ nmap <Leader>b :b#<cr>
 
 "Quickly close the current buffer with `,q`
 nmap <Leader>q :q<cr>
+
+"Quickly write the current buffer with `,w`
+nmap <Leader>w :w<cr>
+
+"Quickly open netrw with ,e
+nmap <Leader>e :e .<cr>
+
+"Switch to a preferred light color theme
+command! -nargs=0 Light :color retrobox | set background=light
+
+"Switch to a preferred dark color theme
+command! -nargs=0 Dark :color dogrun | set background=dark
 
 "Creating aliases for split resizing
 command! -nargs=1 Vr vertical resize <args>
@@ -120,8 +137,8 @@ nnoremap <C-p> :find ./**/*
 "and SHIFT to scroll much faster
 nnoremap <C-k> <C-y>
 nnoremap <C-j> <C-e>
-nnoremap <S-C-k> 10<C-y>
-nnoremap <S-C-j> 10<C-e>
+nnoremap <S-C-k> 15<C-y>
+nnoremap <S-C-j> 15<C-e>
 
 "Making SHIFT + directional buttons move the cursor faster in normal mode
 nnoremap J 4j
@@ -167,6 +184,9 @@ set relativenumber
 set ignorecase
 set smartcase
 
+"Make the amount of max signs for vim-gitgutter unlimited
+"Consider changing this if performance struggles
+let g:gitgutter_max_signs = -1
 
 "Configuring the status line
 set statusline=
@@ -184,6 +204,16 @@ set statusline+=%#warningmsg#
 if exists("*fugitive#statusline")
     set statusline+=%{fugitive#statusline()}
 endif
+
+if exists("*GitGutterGetHunkSummary")
+  function! GitStatus()
+    let [a,m,r] = GitGutterGetHunkSummary()
+    return printf('+%d ~%d -%d', a, m, r)
+  endfunction
+
+  set statusline+=%{GitStatus()}
+endif
+
 
 "file is modified flag
 set statusline+=%*
